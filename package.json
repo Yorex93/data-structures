@@ -1,0 +1,13 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Implementations for various data structures",
+  "main": "index.js",
+  "repository": "git@github.com:Yorex93/data-structures.git",
+  "author": "Emmanuel Igbodudu <emmanueligbodudu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "typescript": "^3.7.4"
+  }
+}
