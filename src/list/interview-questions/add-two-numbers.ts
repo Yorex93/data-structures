@@ -1,4 +1,4 @@
-import { LinkedListNode, LinkedList } from "../linked";
+import { ListNode, LinkedList } from "../linked-list";
 
 /**
  * You have two numbers represented by a linked list, where each node contains a single digit. 
@@ -9,16 +9,16 @@ import { LinkedListNode, LinkedList } from "../linked";
  * Output: 8 -> 0 -> 8
  */
 
-function addTwoNodes(listNode1: LinkedListNode<number>, listNode2: LinkedListNode<number>, carry: number = 0): LinkedListNode<number> {
+function addTwoNodes(listNode1: ListNode<number>, listNode2: ListNode<number>, carry: number = 0): ListNode<number> {
 
     if(listNode1 === null && listNode2 === null) {
         if(carry > 0) {
-            return new LinkedListNode(carry);
+            return new ListNode(carry);
         }
         return null;
     }
 
-    const result = new LinkedListNode(carry);
+    const result = new ListNode(carry);
     let newValue = carry;
     
     if(listNode1 != null) {
@@ -39,13 +39,13 @@ function addTwoNodes(listNode1: LinkedListNode<number>, listNode2: LinkedListNod
     return result;
 }
 
-let listNode1 = new LinkedListNode(3);
-listNode1.next = new LinkedListNode(1);
-listNode1.next.next = new LinkedListNode(5); // 513
+let listNode1 = new ListNode(3);
+listNode1.next = new ListNode(1);
+listNode1.next.next = new ListNode(5); // 513
 
-let listNode2 = new LinkedListNode(5);
-listNode2.next = new LinkedListNode(9);
-listNode2.next.next = new LinkedListNode(4); // 495
+let listNode2 = new ListNode(5);
+listNode2.next = new ListNode(9);
+listNode2.next.next = new ListNode(4); // 495
 
 let result = addTwoNodes(listNode1, listNode2); // 1008
 

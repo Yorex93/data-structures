@@ -1,15 +1,15 @@
-import { LinkedListNode } from "../linked";
+import { ListNode } from "../linked-list";
 
 /**
  * Given a linked list, check if the linked list has loop or not. Below diagram shows a linked list with a loop.
  */
 
-type LoopCheckFunction = (node: LinkedListNode) => boolean;
+type LoopCheckFunction = (node: ListNode) => boolean;
 
 const solutions = {
 
-    checkForLoopWithHashing: function (node: LinkedListNode): boolean {
-        const hashMap: Map<LinkedListNode, boolean> = new Map();
+    checkForLoopWithHashing: function (node: ListNode): boolean {
+        const hashMap: Map<ListNode, boolean> = new Map();
 
         while(node) {
             if(hashMap.has(node)) {
@@ -27,7 +27,7 @@ const solutions = {
      * Move one pointer(slow_p) by one and another pointer(fast_p) by two. 
      * If these pointers meet at the same node then there is a loop. If pointers do not meet then linked list doesn’t have a loop
     */
-    checkForLoopWithPointers: function (node: LinkedListNode): boolean {
+    checkForLoopWithPointers: function (node: ListNode): boolean {
 
         // Initialize two pointers
         let slowPointer = node;
@@ -47,11 +47,11 @@ const solutions = {
     },
 }
 
-let head = new LinkedListNode('a');
-let nodeB = new LinkedListNode('b');
-let nodeC = new LinkedListNode('c');
-let nodeD = new LinkedListNode('d');
-let nodeE = new LinkedListNode('e');
+let head = new ListNode('a');
+let nodeB = new ListNode('b');
+let nodeC = new ListNode('c');
+let nodeD = new ListNode('d');
+let nodeE = new ListNode('e');
 head.next = nodeB;
 nodeB.next = nodeC;
 nodeC.next = nodeD;

@@ -1,4 +1,4 @@
-import { LinkedListNode } from "../linked";
+import { ListNode } from "../linked-list";
 import { checkPerformance } from "../../lib/benchmark";
 
 /**
@@ -11,8 +11,8 @@ import { checkPerformance } from "../../lib/benchmark";
  * Output: C
  */
 
-function getBeginningOfLoop (node: LinkedListNode) : LinkedListNode {
-    const hashMap: Map<LinkedListNode, boolean> = new Map();
+function getBeginningOfLoop (node: ListNode) : ListNode {
+    const hashMap: Map<ListNode, boolean> = new Map();
     while(node) {
         if(hashMap.has(node)) {
             return node;
@@ -23,7 +23,7 @@ function getBeginningOfLoop (node: LinkedListNode) : LinkedListNode {
     return null;
 } 
 
-function getBeginningOfLoopPointers (head: LinkedListNode) : LinkedListNode {
+function getBeginningOfLoopPointers (head: ListNode) : ListNode {
     let pointer1 = head;
     let pointer2 = head;
     
@@ -51,11 +51,11 @@ function getBeginningOfLoopPointers (head: LinkedListNode) : LinkedListNode {
     return pointer2;
 }
 
-let head = new LinkedListNode('a');
-let nodeB = new LinkedListNode('b');
-let nodeC = new LinkedListNode('c');
-let nodeD = new LinkedListNode('d');
-let nodeE = new LinkedListNode('e');
+let head = new ListNode('a');
+let nodeB = new ListNode('b');
+let nodeC = new ListNode('c');
+let nodeD = new ListNode('d');
+let nodeE = new ListNode('e');
 head.next = nodeB;
 nodeB.next = nodeC;
 nodeC.next = nodeD;

@@ -1,4 +1,4 @@
-import { LinkedListNode } from "../linked";
+import { ListNode } from "../linked-list";
 
 /**
  * Write code to remove duplicates from an unsorted linked list.
@@ -6,7 +6,7 @@ import { LinkedListNode } from "../linked";
  * How would you solve this problem if a temporary buffer is not allowed?
  */
 
-function removeDuplicates(node: LinkedListNode): void {
+function removeDuplicates(node: ListNode): void {
     if(node === null) {
         return;
     }
@@ -25,7 +25,7 @@ function removeDuplicates(node: LinkedListNode): void {
     }
 } 
 
-function removeDuplicatesWithoutBuffer(head: LinkedListNode): void {
+function removeDuplicatesWithoutBuffer(head: ListNode): void {
     if(head === null) {
         return;
     }
@@ -58,9 +58,9 @@ function removeDuplicatesWithoutBuffer(head: LinkedListNode): void {
     }
 } 
 
-let head = new LinkedListNode('a');
-let nodeB = new LinkedListNode('b');
-let nodeC = new LinkedListNode('b');
+let head = new ListNode('a');
+let nodeB = new ListNode('b');
+let nodeC = new ListNode('b');
 head.next = nodeB;
 nodeB.next = nodeC;
 

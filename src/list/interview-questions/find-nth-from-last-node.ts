@@ -1,10 +1,10 @@
-import { LinkedListNode } from "../linked";
+import { ListNode } from "../linked-list";
 
 /**
  * Implement an algorithm to find the nth to last element of a singly linked list.
  */
 
-function findNthToLast(head: LinkedListNode, n: number): LinkedListNode {
+function findNthToLast(head: ListNode, n: number): ListNode {
 
     if(head === null || n < 1) {
         return null;
@@ -34,11 +34,11 @@ function findNthToLast(head: LinkedListNode, n: number): LinkedListNode {
     return pointer1;
 }
 
-let head = new LinkedListNode('a');
-let nodeB = new LinkedListNode('b');
-let nodeC = new LinkedListNode('c');
-let nodeD = new LinkedListNode('d');
-let nodeE = new LinkedListNode('e');
+let head = new ListNode('a');
+let nodeB = new ListNode('b');
+let nodeC = new ListNode('c');
+let nodeD = new ListNode('d');
+let nodeE = new ListNode('e');
 head.next = nodeB;
 nodeB.next = nodeC;
 nodeC.next = nodeD;

@@ -1,4 +1,4 @@
-import { LinkedListNode, LinkedList } from "../linked";
+import { ListNode, LinkedList } from "../linked-list";
 
 /**
  * Implement an algorithm to delete a node in the middle of a single linked list, given
@@ -8,7 +8,7 @@ import { LinkedListNode, LinkedList } from "../linked";
  * Result: nothing is returned, but the new linked list looks like a->b->d->e
  */
 
- function deleteNode (nodeToDelete: LinkedListNode) : boolean {
+ function deleteNode (nodeToDelete: ListNode) : boolean {
     if(!nodeToDelete || !nodeToDelete.next) {
         return false
     }
