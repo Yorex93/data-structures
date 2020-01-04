@@ -21,6 +21,20 @@ import { ArrayStack, ListStack } from "./implementation";
  * compiler's syntax check for matching braces is implemented by using stack.
  * support for recursion
  */
+
+/**
+ * Deapth-First Search with a Stack
+ * In depth-first search we go down a path until we get to a dead end; then we backtrack or back up (by popping a stack) 
+ * to get an alternative path.
+ * Create a stack
+ * Create a new choice point
+ * Push the choice point onto the stack
+ * while (not found and stack is not empty)
+ *     Pop the stack
+ *     Find all possible choices after the last one tried
+ *     Push these choices onto the stack
+ * Return
+ */
 export interface IStack<T = any> {
     /**
      * @description Add data to the top stack, has a time complexity O(1)

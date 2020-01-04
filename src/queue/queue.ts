@@ -12,6 +12,20 @@ import { LinkedList } from "src/list/linked-list";
  * In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
  */
 
+/**
+ * Breadth-First Search with a Queue
+ * In breadth-first search we explore all the nearest possibilities by finding all possible successors and enqueue them to a queue.
+ *  
+ * Create a queue
+ * Create a new choice point
+ * Enqueue the choice point onto the queue
+ * while (not found and queue is not empty)
+ *    Dequeue the queue
+ *    Find all possible choices after the last one tried
+ *    Enqueue these choices onto the queue
+ * Return
+ */
+
 export interface IQueue<T = any> {
     /**
      * @description Checks if queue is empty, Time complexity O(1)
