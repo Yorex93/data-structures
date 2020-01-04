@@ -1,4 +1,4 @@
-import { LinkedListNode } from "../singly-linked";
+import { LinkedListNode } from "../linked";
 
 /**
  * Write code to remove duplicates from an unsorted linked list.

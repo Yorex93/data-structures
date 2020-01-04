@@ -1,4 +1,4 @@
-import { LinkedListNode, LinkedList } from "../singly-linked";
+import { LinkedListNode, LinkedList } from "../linked";
 
 /**
  * Implement an algorithm to delete a node in the middle of a single linked list, given

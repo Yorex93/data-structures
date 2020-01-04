@@ -1,4 +1,4 @@
-import { LinkedListNode, LinkedList } from "../singly-linked";
+import { LinkedListNode, LinkedList } from "../linked";
 
 /**
  * You have two numbers represented by a linked list, where each node contains a single digit. 

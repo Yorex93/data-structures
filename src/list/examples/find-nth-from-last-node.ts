@@ -1,4 +1,4 @@
-import { LinkedListNode } from "../singly-linked";
+import { LinkedListNode } from "../linked";
 
 /**
  * Implement an algorithm to find the nth to last element of a singly linked list.

@@ -7,6 +7,7 @@
   "author": "Emmanuel Igbodudu <emmanueligbodudu@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^13.1.4",
     "jest": "^24.9.0",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
