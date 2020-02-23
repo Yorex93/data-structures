@@ -94,8 +94,6 @@ export class DoublyLinkedList<T = any> implements  IDoublyLinkedList<T>, Printab
 
         nodeAfterDeletedNode.next = nodeAfterDeletedNode;
         nodeAfterDeletedNode.previous = nodeBeforeDeletedNode;
-
-        let deletedNode = nodeToDelete;
         nodeToDelete = null;
         this.length--;
     }
