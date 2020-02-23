@@ -1,5 +1,5 @@
-import { Node } from "../lib/node";
-import { PrintableCollection } from "../lib/printable";
+import { Node } from "../node";
+import { PrintableCollection } from "../printable";
 
 export class DoublyLinkedListNode<T> extends Node<T> {
     constructor(data: T) {

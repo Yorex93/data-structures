@@ -1,4 +1,4 @@
-import { IQueue } from "src/queue/queue";
+import { IQueue } from "src/lib/queue/queue";
 
 /**
  * Describe how you could use a single array to implement three stacks.

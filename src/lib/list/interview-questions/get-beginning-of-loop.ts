@@ -1,5 +1,5 @@
 import { ListNode } from "../linked-list";
-import { checkPerformance } from "../../lib/benchmark";
+import { checkPerformance } from "../../benchmark";
 
 /**
  * Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.

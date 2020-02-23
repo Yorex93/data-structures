@@ -1,5 +1,5 @@
 import { ArrayQueue } from "./implementation/array-queue";
-import { LinkedList } from "src/list/linked-list";
+import { LinkedList } from "src/lib/list/linked-list";
 
 /**
  * A queue is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) 

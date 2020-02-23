@@ -1,6 +1,6 @@
-import { Node } from "../lib/node";
-import { PrintableCollection } from "../lib/printable";
-import { IQueue } from "src/queue/queue";
+import { Node } from "../node";
+import { PrintableCollection } from "../printable";
+import { IQueue } from "src/lib/queue/queue";
 
 /**
  * Advantages over arrays

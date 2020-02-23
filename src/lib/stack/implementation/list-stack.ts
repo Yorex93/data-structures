@@ -1,9 +1,9 @@
 import { IStack } from "../stack";
-import { ListNode } from "src/list/linked-list";
+import { ListNode } from "src/lib/list/linked-list";
 
 export class ListStack<T = any> implements IStack<T> {
 
-    private _top: ListNode<T>;
+    protected _top: ListNode<T>;
 
     constructor() {
         this._top = null;
